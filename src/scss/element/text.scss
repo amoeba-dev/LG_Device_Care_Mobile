@@ -1,0 +1,133 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+  // input //
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+  z-index:21;
+  @include set-font(1.6rem, 400, $color-gray-01, normal);
+  // width:100%;
+  // padding:0.65rem 1rem;
+  // border-radius:0;
+  // border:none;
+  // border-bottom: 1px solid $color-border-01;
+  // background-color: transparent;
+  // outline:0;
+
+  width:100%;
+  padding:0.65rem 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid $color-border-05;
+  // background-color: transparent;
+  outline:0;
+  &::placeholder {
+    color: $color-disabled;
+  }
+
+  &:focus, &:active {
+    border-color:$color-primary;
+    border-bottom-color:$color-primary;
+
+    + .btn-input-remove {
+      display:block;
+    }
+  }
+
+  &.warning {
+    background-color:#fffc00;
+    border-color: $color-primary;
+  }
+
+  &:disabled {
+    background-color: #d0d1d2;
+    color:rgba($color-gray-01, 0.5);
+  }
+  &:read-only {
+    border:none;
+    // padding-left: 0;
+  }
+  &.search {
+    height:3.4rem;
+    padding:0 1.4rem;
+    border-color:$color-border-03;
+    line-height:3.2rem;
+
+    // + .btn-input-remove {
+    //   right:5.5rem;
+    // }
+
+    &.search_b {
+      height:4.5rem;
+      padding:0 2.5rem;
+      font-size:1.8rem;
+      &:focus {
+        line-height:4.3rem;
+        padding:0 2.4rem;
+      }
+    }
+
+    &:focus {
+      padding:0 1.3rem;
+      border-width:2px;
+      // border-color:$color-primary;
+      border-color:#354056;
+      line-height:3.1rem;
+    }
+  }
+}
+
+input[type="text"] {
+  padding:0.65rem 4rem 0.65rem 1rem;
+} 
+
+// input 삭제 버튼
+.btn-input-remove {
+  z-index:22;
+  position:absolute;
+  right:1.4rem;
+  top:50%;
+  transform:translateY(-50%);
+  width:2rem;
+  height:2rem;
+  background:asset-image('ic_delete_x.svg') no-repeat center / 2rem;
+}
+
+.search-btn-input-remove {
+  z-index:22;
+  position:absolute;
+  right:3.4rem;
+  top:50%;
+  transform:translateY(-50%);
+  width:2rem;
+  height:2rem;
+  background:asset-image('ic_delete_x.svg') no-repeat center / 2rem;
+}
+
+// input 검색 버튼
+.btn-search {
+  z-index:22;
+  position:absolute;
+  right:0.8rem;
+  top:50%;
+  transform:translateY(-50%);
+  width: 2.8rem;
+  height: 2.8rem;
+  background: asset-image('ic_search.svg') no-repeat center / 1.8rem;
+
+  &:hover {
+    background-color: #DADDE2;
+    border-radius: 50%;
+  }
+  &:active {
+    background-color: #BEC2CB;
+    border-radius: 50%;
+  }
+}

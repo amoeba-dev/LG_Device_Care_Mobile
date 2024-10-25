@@ -1,0 +1,174 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+  .field-type-search {
+    width:100%;
+  
+    .input-box {
+      @include set-flex(row, flex-start, center);
+      &:before {
+        content:'';
+        position:absolute;
+        top:50%;
+        transform: translate(-50%, -50%);
+        left:3rem;
+        width: .1rem;
+        height: 2.2rem;
+        background-color: $color-border-01;
+      }
+    }
+  
+    input[type=text] {
+      @include set-flex-grow(1);
+      height:4.4rem;
+      padding-left: 3rem;
+      border:1px solid $color-border-01;
+      border-radius:2.1rem 0 0 2.1rem;
+      border-right:none;
+      line-height: 4.2rem;
+  
+      &.search_a {
+        @include set-font(1.4rem, 400, $color-gray-01);
+        height: 3.4rem;
+        padding-left: 4rem;
+  
+        ~ .btn-search {
+          height:3.4rem;
+          padding:0.8rem 1.4rem;      
+        }
+  
+        &:focus, &:active {
+          height:3.4rem;
+          border: 2px solid $color-primary;
+          border-right:none;
+          line-height: 3rem;
+      
+          + .btn-input-remove {
+            // display:block;
+            right:3.9rem;
+          }
+    
+          ~ .btn-search {
+            height:3.4rem;
+            border: 2px solid $color-primary;
+            border-left:none;
+    
+            &:before {
+              margin-top: -0.1rem;
+              margin-right: -0.1rem;
+            }
+          }
+        }
+      }
+  
+      &.search_b {
+        @include set-font(1.4rem, 400, $color-gray-01);
+        height: 4.4rem;
+        padding-left: 4rem;
+  
+        ~ .btn-search {
+          height:4.4rem;
+          padding:1.2rem 1.9rem;
+        }
+  
+        &:focus, &:active {
+          height:4.4rem;
+          padding-left: 3.9rem;
+          border: 2px solid $color-primary;
+          border-right:none;
+          line-height: 4rem;
+      
+          + .btn-input-remove {
+            display:block;
+            right:5.5rem;
+          }
+    
+          ~ .btn-search {
+            height:4.4rem;
+            border: 2px solid $color-primary;
+            border-left:none;
+    
+            &:before {
+              margin-top: -0.1rem;
+              margin-right: -0.1rem;
+            }
+          }
+        }
+      }
+
+      &.search_c {
+        padding: 0 3.6rem 0 4rem;
+        height: 3.6rem;
+        // border: 1px solid $color-border-05;
+        border-right: 1px solid #949494;
+        border-radius: 0.6rem;
+        background-color: $color-white;
+        @include set-font(1.4rem, 400, $color-gray-01, 1.4);
+        + .btn-input-remove {
+          right: 1.2rem;
+        }
+        ~ .btn-search {
+          position: absolute;
+          left: 1.2rem;
+          top: 50%;
+          width: 2rem;
+          height: 2rem;
+          border: 0;
+          background: asset-image('ic_search.svg') no-repeat center / 100% auto;
+          transform: translateY(-50%);
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  
+    .btn-search {
+      @include set-font(1.6rem, 500, $color-dark-gray, 4rem);
+      position:static;
+      width:auto;
+      margin-bottom:0;
+      border-radius:0 2.1rem 2.1rem 0;
+      border:1px solid $color-border-01;
+      border-left:none;
+      background: none;
+      background-color: $color-white;
+      transform: none;
+  
+      &:before {
+        content:'';
+        display:block;
+        width:18px;
+        height:18px;
+        background: asset-image('icon_search.svg') center no-repeat;
+      }
+    }
+  
+    .searching {
+      z-index:22;
+      position:absolute;
+      right:5.5rem;
+      top:1.5rem;
+      display:none;
+      width:1.4rem;
+      height:1.4rem;
+      background:asset-image('loading_icon.svg') no-repeat center / 1.4rem 1.4rem;
+      font-size:0;
+      animation-duration: 1.5s;
+      animation-name: rotate;
+      animation-iteration-count:infinite;
+      animation-timing-function:linear;
+    }
+  }
+
+  @media screen and (max-width:1280px) {
+    .search-box {
+      padding-bottom:3rem;
+      border-bottom:1px solid $color-border-03;
+    }
+  }

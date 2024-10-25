@@ -1,0 +1,6 @@
+node_modules/
+__package.json
+gulpfile.js
+package.json
+package-lock.json
+설치방법.txt

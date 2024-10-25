@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// textarea
+textarea {
+  width: 100%;
+  height: 14.4rem;
+  padding: 0.8rem 1rem;
+  border-color: $color-border-05;
+  background-color: $color-white;
+  resize: none;
+  border-radius: 8px;
+
+  &::placeholder {
+    color: $color-disabled;
+    @include set-font(1.4rem, 400, $color-gray-05, normal);
+  }
+}

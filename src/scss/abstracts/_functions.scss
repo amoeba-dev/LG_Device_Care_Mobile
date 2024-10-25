@@ -1,0 +1,33 @@
+/**
+    /assets/images/ 하위 경로에 위치한 파일에 접근하는데 편의를 높이기 위함
+    베이스 경로가 미리 설정됨
+    
+    @param $path - 세부 경로
+    @param $name - 파일명
+    @return - url() 값
+*/
+
+@function asset($base, $name) {
+  @return url($base + $name);
+}
+
+@function asset-font($name) {
+  // $base: '~fonts/';
+  $base: '../images/';
+  @return asset($base,$name);
+}
+
+@function asset-image($name) {
+  // $base: '~images/';
+  $base: '../images/';
+  @return asset($base,$name);
+}
+
+// opactiy 
+@function set-color($color, $opacity) {
+  $red: red($color);
+  $green: green($color);
+  $blue: blue($color);
+
+  @return rgba($red, $green, $blue, $opacity);
+}

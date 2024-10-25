@@ -1,0 +1,78 @@
+/* Noto Sans */
+
+/* noto-sans-100 */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Noto Sans'),
+      url('../fonts/noto_sans/NotoSans-Thin.woff') format('woff');
+}
+/* noto-sans-kr-200 - latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans'),
+      url('../fonts/noto_sans/NotoSans-Light.woff') format('woff');
+}
+/* noto-sans-kr-regular - latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'),
+      url('../fonts/noto_sans/NotoSans-Medium.woff') format('woff');
+}
+/* noto-sans-kr-500 - latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans'),
+      url('../fonts/noto_sans/NotoSans-SemiBold.woff') format('woff');
+}
+/* noto-sans-kr-700 - latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans'),
+      url('../fonts/noto_sans/NotoSans-Bold.woff') format('woff');
+}
+
+/* noto-sans-kr-700 - latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Noto Sans'),
+      url('../fonts/noto_sans/NotoSans-Black.woff') format('woff');
+}
+
+/* Noto Sans KR - 400 */
+@font-face {
+  font-family: 'Noto Sans kr';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans kr'),
+      url('../fonts/noto_sans_kr/NotoSansKR-Regular-Hestia.woff') format('woff');
+}
+
+/* Noto Sans KR - 500 */
+@font-face {
+  font-family: 'Noto Sans kr';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans kr'),
+      url('../fonts/noto_sans_kr/NotoSansKR-Medium-Hestia.woff') format('woff');
+}
+
+/* Noto Sans KR - 700 */
+@font-face {
+  font-family: 'Noto Sans kr';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans kr'),
+      url('../fonts/noto_sans_kr/NotoSansKR-Bold-Hestia.woff') format('woff');
+}
