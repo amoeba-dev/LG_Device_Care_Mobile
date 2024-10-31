@@ -375,6 +375,12 @@ input.input-txt {
               color:#333333;
             }
           }
+          &:nth-child(2){
+            align-items: flex-start;
+            #address1{
+              margin:1rem 0;
+            }
+          }
           &:nth-child(3){
             align-items: flex-start;
             input[type=text]{
