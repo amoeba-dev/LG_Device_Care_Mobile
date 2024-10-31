@@ -305,6 +305,20 @@ input.input-txt {
       border: 1px solid #dcdcdc;
       border-radius: 1rem;
       margin-bottom: 2rem;
+      &.required{
+        .input-wrap-title{
+          &::after{
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #1D76FB;
+            line-height: normal;
+            content: '*';
+            margin-left: 0.2rem;
+        
+          }
+        }
+        
+      }
       &-title {
         margin-bottom: 2rem;
       }
@@ -326,19 +340,7 @@ input.input-txt {
               width: 25rem;
             }
           }
-          &:nth-child(4){
-            .field-form{
-              margin-left:0.7rem;
-              .field-box{
-                justify-content: space-between;
-                .radio{
-                  margin:0;
-                  width:21%;
-                  margin-bottom:0.5rem;
-                }
-              }
-            }
-          }
+          
         }
       }
     }
@@ -377,6 +379,19 @@ input.input-txt {
             align-items: flex-start;
             input[type=text]{
               margin-bottom:1rem;
+            }
+          }
+          &:nth-child(4){
+            .field-form{
+              margin-left:0.7rem;
+              .field-box{
+                justify-content: space-between;
+                .radio{
+                  margin:0;
+                  width:21%;
+                  margin-bottom:0.5rem;
+                }
+              }
             }
           }
         }
