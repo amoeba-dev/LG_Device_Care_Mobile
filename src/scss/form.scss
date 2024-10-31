@@ -1,21 +1,10 @@
 @charset 'UTF-8';
 
 // 1. Configuration and helpers
-@import 'abstracts/variables',
-'abstracts/functions',
-'abstracts/mixins';
+@import 'abstracts/variables', 'abstracts/functions', 'abstracts/mixins';
 
-@import 'element/text',
-'element/textarea',
-'element/radio',
-'element/checkbox',
-'element/switch',
-'element/button',
-'element/search',
-'element/select',
-'element/dropdown',
-'element/tooltip',
-'element/datepicker';
+@import 'element/text', 'element/textarea', 'element/radio', 'element/checkbox', 'element/switch', 'element/button', 'element/search', 'element/select',
+  'element/dropdown', 'element/tooltip', 'element/datepicker';
 
 fieldset {
   min-width: 0;
@@ -58,11 +47,11 @@ fieldset {
   &.field-flex {
     @include set-flex(row, flex-start, flex-start);
     flex-wrap: wrap;
-    
+
     &.field-type-switch {
       align-items: center;
     }
-    
+
     .field-label {
       @include set-flex(row, flex-end, center);
       @include set-font(1.6rem, 500, $color-gray-01);
@@ -91,7 +80,7 @@ fieldset {
         @include set-flex-grow(1);
       }
 
-      >.btn {
+      > .btn {
         margin-left: 1rem;
       }
 
@@ -101,7 +90,6 @@ fieldset {
         margin-left: 1rem;
       }
     }
-
   }
 
   &.required {
@@ -109,7 +97,7 @@ fieldset {
       &:after {
         @include set-font(1.6rem, 500, $color-blue, normal);
         content: '*';
-        margin-left: .2rem;
+        margin-left: 0.2rem;
       }
     }
   }
@@ -121,7 +109,7 @@ fieldset {
   .field-label {
     @include set-font(1.6rem, 500, $color-gray-01, normal);
     display: inline-block;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
   .field-content {
@@ -155,13 +143,12 @@ fieldset {
   }
 
   &.error {
-
-    input[type="text"],
-    input[type="search"],
-    input[type="password"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="number"],
+    input[type='text'],
+    input[type='search'],
+    input[type='password'],
+    input[type='email'],
+    input[type='tel'],
+    input[type='number'],
     .select-box {
       border: 1px solid $color-primary !important;
 
@@ -181,7 +168,7 @@ fieldset {
     flex-wrap: wrap;
     margin: 0 -0.6rem;
 
-    >* {
+    > * {
       flex: 1;
       margin: 0 0.6rem;
 
@@ -190,7 +177,7 @@ fieldset {
       &.checkbox,
       &.radio,
       &.switch,
-      &.colon{
+      &.colon {
         flex: none;
         max-width: 100%;
       }
@@ -247,19 +234,18 @@ input.input-txt {
   }
 }
 
-
 // slide bar
 .field-slide-bar {
-  width:100%;
+  width: 100%;
   .field-form {
     @include set-flex(row, space-between, center);
 
     .field-value {
-      margin-right:2rem;
+      margin-right: 2rem;
       input {
-        width:8rem !important;
-        height:3rem;
-        border:1px solid $color-border-03;
+        width: 8rem !important;
+        height: 3rem;
+        border: 1px solid $color-border-03;
       }
     }
 
@@ -272,9 +258,9 @@ input.input-txt {
         min-width: 2.4rem !important;
         width: 2.4rem !important;
         height: 2.4rem;
-        padding:0;
-        border-radius:1.2rem;
-        border:1px solid $color-border-01;
+        padding: 0;
+        border-radius: 1.2rem;
+        border: 1px solid $color-border-01;
         text-indent: -9999px;
 
         &.btn-minus {
@@ -286,22 +272,22 @@ input.input-txt {
         }
       }
 
-      input[type=range] {
+      input[type='range'] {
         appearance: none;
         -webkit-appearance: none;
-        width:calc(100% - 7.2rem);
-        height:.6rem;
-        margin:0 1.2rem;
-        border-radius:.3rem;
-        border:none;
+        width: calc(100% - 7.2rem);
+        height: 0.6rem;
+        margin: 0 1.2rem;
+        border-radius: 0.3rem;
+        border: none;
         background-color: #f1f1f1;
         cursor: pointer;
 
         &::-webkit-slider-thumb {
           -webkit-appearance: none;
-          width:1.4rem;
-          height:1.4rem;
-          border-radius:50%;
+          width: 1.4rem;
+          height: 1.4rem;
+          border-radius: 50%;
           background-color: $color-primary;
         }
       }
@@ -309,6 +295,95 @@ input.input-txt {
   }
 }
 
+// 24.10.30 LGDCM
+.install {
+  background: #fff;
+  max-width: 48rem;
+  .install-wrap {
+    .input-wrap {
+      padding: 2rem;
+      border: 1px solid #dcdcdc;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+      &-title {
+        margin-bottom: 2rem;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .filed-wrap {
+        .field {
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &.field-flex {
+            align-items: center;
+            justify-content: space-between;
+            .field-label {
+              display: block;
+            }
+            .field-form {
+              width: 25rem;
+            }
+          }
+          &:nth-child(4){
+            .field-form{
+              margin-left:0.7rem;
+              .field-box{
+                justify-content: space-between;
+                .radio{
+                  margin:0;
+                  width:21%;
+                  margin-bottom:0.5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .installation{
+      .filed-wrap{
+        .field{
+          .datepicker-container{
+            width:25rem;
+            .input-box{
+              .datepicker{
+                width:100%;
+                text-align: left;
+              }
+            }
+          }
+          .filebox{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            label{
+              border: 1px solid #dadde2;
+              padding:1.2rem 0.6rem;
+              font-size: 1.2rem;
+              border-radius: 0.6rem;
+              color: #767676;
+            }
+            .upload-name{
+              padding:0.65rem 0rem 0.65rem 1rem;
+              font-size: 1.6rem;
+              border-radius: 0.6rem;
+              border: 1px solid #dadde2;
+              color:#333333;
+            }
+          }
+          &:nth-child(3){
+            align-items: flex-start;
+            input[type=text]{
+              margin-bottom:1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 //200%
 // @media screen and (max-width:991px) {
@@ -422,7 +497,7 @@ input.input-txt {
 //       //   }
 //       // }
 //     }
-    
+
 //     .field-form {
 //       &.field-form-type {
 //         .field-box {
@@ -455,7 +530,7 @@ input.input-txt {
 //     }
 
 //     .field-form {
-  
+
 //       .field-box {
 //         @include set-flex(column, flex-start, flex-start);
 //         margin: 0;
@@ -487,7 +562,7 @@ input.input-txt {
 //       flex-direction: column;
 //       align-items: flex-start;
 //     }
-    
+
 //   }
 
 //   .btn {
