@@ -406,6 +406,30 @@ input.input-txt {
   }
 }
 
+@media screen and (max-width:640px){
+  .install{
+    .install-wrap{
+      .input-wrap{
+        .filed-wrap{
+          .field{
+            &.field-flex{
+              .field-form{
+                width:100%;
+              }
+            }
+          }
+          .field-datepicker{
+            width:100%;
+            .datepicker-container{
+              width:100%;
+            }
+          }
+        }
+      }
+    }
+  }     
+}
+
 //200%
 // @media screen and (max-width:991px) {
 //   .field {
