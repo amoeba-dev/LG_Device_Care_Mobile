@@ -36,8 +36,8 @@
 
 .btn {
   @include set-font(1.4rem, 400, $color-gray-01, normal);
-  height:3.6rem;
-  padding: 0 1.6rem;
+  // height:3.6rem;
+  padding: 0.7rem 1.6rem;
   border-radius:0.6rem;
   border:1px solid $color-border-03;
   background-color: $color-white;

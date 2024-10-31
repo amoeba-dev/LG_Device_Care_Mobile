@@ -1642,6 +1642,31 @@
   }
 }
 
+// LGDCM 팝업
+#popup-save-fail{
+  .popup{
+    max-width:40rem;
+    width:90%;
+    .popup-container{
+      .popup-content{
+        .description{
+          text-align: center;
+        }
+      }
+      .popup-footer{
+        .button-box{
+          display: block;
+          text-align: center;
+          .btn{
+            margin:0.5rem 0;
+          }
+        }
+      }
+    }
+  }
+  
+}
+
 // table.priority-table {
 //   height: 29.3rem;
 
@@ -2225,6 +2250,34 @@
     }
   }
 
+  // LGDCM 팝업
+#popup-save-fail{
+  .popup{
+    max-width:40rem !important;
+    width:90% !important;
+    left:50%;
+    right:unset;
+    transform: translate(-50%,-50%);
+
+    .popup-container{
+      .popup-content{
+        .description{
+          text-align: center;
+        }
+      }
+      .popup-footer{
+        .button-box{
+          display: block;
+          text-align: center;
+          .btn{
+            max-width:24rem;
+          }
+        }
+      }
+    }
+  }
+  
+}
 }
 
 // 400%
