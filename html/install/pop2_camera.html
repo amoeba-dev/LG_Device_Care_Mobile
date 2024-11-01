@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Table Guide | LG ConnectedCare</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta http-equiv="Pragma" content="no-cache" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/favicon.ico"/>
+  <!-- Styles -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../../assets/default/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="../../assets/default/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+  <link rel="stylesheet" type="text/css" href="../../assets/css/style_all.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/default/xeicon/xeicon.min.css" />
+</head>
+
+<body class="type-rtl"><!-- ByPass -->   <a href="#go-content" class="bypass">Go to main content</a>   <!-- ByPass -->
+  <!-- Scripts -->
+  <div id="ROOT_CONTAINER" class="wrapper">
+    <!-- Content Container -->
+    <div class="content-container">
+      <!-- Content Box -->
+      <main id="go-content" class="content-box show-lnb">
+        <!-- Content middle -->
+        <div class="content-middle">
+          <div class="content-middle-box">
+
+            내용
+
+          </div>
+        </div>
+        <!-- Content middle -->
+      </main>
+      <!-- Content Box -->
+
+      
+
+    </div>
+    <!-- Content Container -->
+
+
+    <!-- popup wrapper -->
+    <div id="popup-QR-camera" class="popup-wrapper show">
+      <!--
+          입력 필드가 있는 Popup은 role="dialog" 속성을 부여합니다.
+          aria-labelledby="label의 id" 속성을 지정하여 스크린 리더가 팝업의 제목을 읽을 수 있도록 합니다.
+          aria-modal 속성을 true로 설정하면 스크린 리더가 팝업 내의 콘텐츠만 읽습니다.
+
+          (스크린 리더의 종류에 따라 지원되지 않을 수 있습니다. 크롬에서 NVDA 스크린리더는 해당 속성을 지원합니다.
+          자세한 내용은 https://a11ysupport.io/tech/aria/aria-modal_attribute 링크에서 확인할 수 있습니다.)
+        -->
+      <div class="popup popup-alert-message" role="dialog" aria-labelledby="popup-label" aria-modal="true">
+        <!-- popup-container -->
+        <div class="popup-container">
+          <!-- Popup header -->
+          <div class="popup-header">
+            <h1 id="popup-label">고장 접수를 위해 메뉴 > xxx > xxx 로 진입해 나오는 QR을 촬영해 주세요.</h1>
+          </div>
+          <!-- Popup header -->
+
+          <!-- Popup content -->
+          <div class="popup-content">
+            <div class="camera-area"></div>
+          </div>
+          <!-- Popup bottom -->
+          <div class="popup-footer">
+            <div class="button-box">
+              <button type="button" id="btn-record" class="btn btn-tertiary"">촬영</button>
+              <button type="button" id="btn-skip" class="btn btn-tertiary"">Skip</button>
+            </div>
+          </div>
+          <!-- Popup bottom -->
+        </div>
+        <!-- popup-container -->
+      </div>
+    </div>
+    <!-- popup wrapper -->
+
+
+  </div>
+  <script type="text/javascript" src="../../assets/lib/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/common.js"></script>
+</body>
+
+</html>

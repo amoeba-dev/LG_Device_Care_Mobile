@@ -1663,8 +1663,34 @@
         }
       }
     }
+  } 
+}
+
+#popup-QR-camera{
+  .popup{
+    display: flex;
+    align-items: center;
+    .popup-container{
+      max-width:48rem;
+      margin:0 auto;
+      .popup-header{
+        h1{
+          font-size: 2.4rem;
+        }
+      }
+      .popup-content{
+        margin:4rem 0;
+        height: auto;
+        .camera-area{
+          max-width:40rem;
+          width:95%;
+          min-height: 40rem;
+          margin: 0 auto;
+          border: 1px solid #000;
+        }
+      }
+    }
   }
-  
 }
 
 // table.priority-table {
@@ -2251,33 +2277,43 @@
   }
 
   // LGDCM 팝업
-#popup-save-fail{
-  .popup{
-    max-width:40rem !important;
-    width:90% !important;
-    left:50%;
-    right:unset;
-    transform: translate(-50%,-50%);
+  #popup-save-fail{
+    .popup{
+      max-width:40rem !important;
+      width:90% !important;
+      left:50%;
+      right:unset;
+      transform: translate(-50%,-50%);
 
-    .popup-container{
-      .popup-content{
-        .description{
-          text-align: center;
+      .popup-container{
+        .popup-content{
+          .description{
+            text-align: center;
+          }
         }
-      }
-      .popup-footer{
-        .button-box{
-          display: block;
-          text-align: center;
-          .btn{
-            max-width:24rem;
+        .popup-footer{
+          .button-box{
+            display: block;
+            text-align: center;
+            .btn{
+              max-width:24rem;
+            }
           }
         }
       }
     }
   }
-  
-}
+  #popup-QR-camera{
+    .popup-footer{
+      .button-box{
+        .btn{
+          max-width:10rem;
+          display: block;
+          margin:0.5rem auto;
+        }
+      } 
+    } 
+  }
 }
 
 // 400%
