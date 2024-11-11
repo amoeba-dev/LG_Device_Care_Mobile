@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Device License | administration | LG ConnectedCare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/favicon.ico" />
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../assets/default/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/default/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style_all.css">
+  </head>
+
+  <body>
+    <!-- ByPass -->
+    <a href="#go-content" class="bypass">Go to main content</a>
+    <!-- ByPass -->
+    <!-- Scripts -->
+    <div id="ROOT_CONTAINER" class="wrapper">
+      <!-- Begin Header Container -->
+      <div class="header-container main">
+        <header>
+          <!-- Left side -->
+          <div class="left-side">
+            <h2>
+              <a href="/" class="logo">LG Device Care Mobile</a>
+            </h2>
+          </div>
+          <!-- Left side -->
+        </header>
+      </div>
+      <!-- End Header Container -->
+
+      <!-- Content Container -->
+      <div class="content-container">
+
+        <!-- Content Box -->
+        <main id="go-content" class="content-box">
+          <!-- Content top -->
+          <div class="content-top">
+            
+          </div>
+          <!-- Content top -->
+
+          <!-- Content middle -->
+          <div class="content-middle">
+            <div class="content-middle-box main">
+              <div class="main-wrap">
+                <li>
+                  <a href="">1. 설치 정보 입력</a>
+                </li>
+                <li>
+                  <a href="">2. 간편 고장 접수</a>
+                </li>
+              </div>
+            </div>
+          </div>
+          <!-- Content middle -->
+        </main>
+        <!-- Content Box -->
+
+        
+      </div>
+      <!-- Content Container -->
+    </div>
+    <script type="text/javascript" src="../../assets/lib/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="../../assets/lib/jquery-ui-1.13.2.min.js"></script>
+    <script type="text/javascript" src="../../assets/lib/date-picker.js"></script>
+    <script type="text/javascript" src="../../assets/js/common.js"></script>
+    <script>
+      $(document).ready(function () {
+        var $siteGroupContainer = $('.site-group-list-container');
+
+        // Open Site //
+
+        $siteGroupContainer.find('.btn-back').on('click', function (e) {
+          var $this = $(this);
+
+          if ($siteGroupContainer.hasClass('active')) {
+            $siteGroupContainer.removeClass('active');
+          } else {
+            $siteGroupContainer.addClass('active');
+          }
+        });
+
+        // Open Child Menu //
+
+        $('.btn-open-child').on('click', function (e) {
+          // changeSiteGroup('group');
+
+          if (!$siteGroupContainer.hasClass('active')) {
+            $siteGroupContainer.addClass('active');
+            console.log('dfasdfasd');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
