@@ -148,3 +148,12 @@ input[type="radio"] {
     }
   }
 }
+
+@media screen and (max-width:480px){
+  input[type="radio"]{
+    + label{
+      padding-left:2rem;
+    }
+  }
+  
+}

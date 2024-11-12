@@ -367,6 +367,7 @@ input.input-txt {
               font-size: 1.2rem;
               border-radius: 0.6rem;
               color: #767676;
+              margin-right: 1rem;
             }
             .upload-name{
               padding:0.65rem 0rem 0.65rem 1rem;
@@ -374,18 +375,35 @@ input.input-txt {
               border-radius: 0.6rem;
               border: 1px solid #dadde2;
               color:#333333;
+              width:100%;
             }
           }
           &:nth-child(2){
             align-items: flex-start;
-            #address1{
-              margin:1rem 0;
+            .field-form{
+              .field-box{
+                .input-box{
+                  flex:unset;
+                  width:100%;
+                  #address1{
+                    margin:1rem 0;
+                  }
+                }
+              }
             }
           }
           &:nth-child(3){
             align-items: flex-start;
-            input[type=text]{
-              margin-bottom:1rem;
+            .field-form{
+              .field-box{
+                .input-box{
+                  flex:unset;
+                  width:100%;
+                  #latitude{
+                    margin:1rem 0;
+                  }
+                }
+              }
             }
           }
           &:nth-child(4){

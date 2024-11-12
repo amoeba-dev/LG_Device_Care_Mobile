@@ -25,10 +25,26 @@
   <!-- ByPass --> <a href="#go-content" class="bypass">Go to main content</a> <!-- ByPass -->
   <!-- Scripts -->
   <div id="ROOT_CONTAINER" class="wrapper">
+    <div class="header-container main">
+      <header>
+        <!-- Left side -->
+        <div class="left-side">
+          <h2>
+            <a href="/" class="logo">LG Device Care Mobile</a>
+          </h2>
+        </div>
+        <!-- Left side -->
+      </header>
+    </div>
     <!-- Content Container -->
     <div class="content-container">
       <!-- Content Box -->
-      <main id="go-content" class="content-box administration">
+      <main id="go-content" class="content-box">
+        <!-- Content top -->
+        <div class="content-top">
+            
+        </div>
+        <!-- Content top -->
         <!-- Content middle -->
         <div class="content-middle">
           <div class="content-middle-box">
@@ -140,15 +156,19 @@
                     <div class="field field-type-input field-flex">
                       <label for="address" class="field-label">Address :</label>
                       <div class="field-form">
-                        <div class="field-box">
+                        <div class="field-box address">
+                          <button type="button" class="btn">Search</button>
                           <div class="input-box">
-                            <button type="button" class="btn">Search</button>
                             <input type="text" id="address1" name="address1" placeholder="Address1" autocomplete="false" aria-invalid="true" aria-describedby="description-address">
+                            <button type="button" class="btn-input-remove hide">
+                              <span class="ir">delete input</span>
+                            </button>
+                          </div>
+                          <div class="input-box">
                             <input type="text" id="address2" name="address2" placeholder="Address2" autocomplete="false" aria-invalid="true" aria-describedby="description-address">
                             <button type="button" class="btn-input-remove hide">
                               <span class="ir">delete input</span>
                             </button>
-                            
                           </div>
                         </div>
                         <span id="description-reporter" class="field-description ir">Address를 입력해주세요.</span>
@@ -160,13 +180,18 @@
                       <div class="field-form">
                         <div class="field-box">
                           <div class="input-box">
-                            <input type="text" id="location" name="location" placeholder="Latitude" autocomplete="false" aria-invalid="true" aria-describedby="description-location">
-                            <input type="text" id="longitude" name="location" placeholder="Longitude" autocomplete="false" aria-invalid="true" aria-describedby="description-location">
-                            <label for="longitude" class="hide">longitude</label>
+                            <label for="latitude" class="hide">Latitude</label>
+                            <input type="text" id="latitude" name="latitude" placeholder="Latitude" autocomplete="false" aria-invalid="true" aria-describedby="description-location">
                             <button type="button" class="btn-input-remove hide">
                               <span class="ir">delete input</span>
                             </button>
-                            
+                          </div>
+                          <div class="input-box">
+                            <label for="longitude" class="hide">Longitude</label>
+                            <input type="text" id="longitude" name="longitude" placeholder="Longitude" autocomplete="false" aria-invalid="true" aria-describedby="description-location">
+                            <button type="button" class="btn-input-remove hide">
+                              <span class="ir">delete input</span>
+                            </button>
                           </div>
                         </div>
                         <span id="description-location" class="field-description ir">location을 입력해주세요.</span>
@@ -393,6 +418,7 @@
           </div>
         </div>
         <!-- Content middle -->
+         
       </main>
       <!-- Content Box -->
     </div>
