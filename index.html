@@ -1,487 +1,494 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="UTF-8" />
-  <title>Connected Care | LG</title>
-  <link rel="stylesheet" type="text/css" href="assets/default/reset.css" />
-  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico"/>
-  <script type="text/javascript" src="assets/lib/jquery-3.7.1.min.js"></script>
-  <script type="text/javascript" src="assets/js/common.js"></script>
-  <style type="text/css">
-    #wrap {
-      min-width: 1280px;
-    }
-
-    #header {
-      color: #000;
-      font-size: 18px;
-      text-align: center;
-      text-transform: uppercase;
-      height: 60px;
-      line-height: 60px;
-    }
-
-    #container {
-      height: 100%;
-    }
-
-    #container>.contents {
-      margin: 2% 0;
-      padding-bottom: 50px;
-    }
-
-    #container>.contents table {
-      width: 90%;
-      border-collapse: collapse;
-      text-align: center;
-      margin: 0 auto;
-    }
-
-    #container>.contents table thead {
-      border-top: 2px solid #333;
-      border-bottom: 1px solid #ddd;
-    }
-
-    #container>.contents table thead tr th {
-      background: #f6f6f6;
-      height: 36px;
-      vertical-align: middle;
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: #333;
-    }
-
-    #container>.contents table tbody tr td {
-      height: 36px;
-      vertical-align: middle;
-      color: #333;
-      font-size: 1.3rem;
-      line-height: normal;
-      border-bottom: 1px solid #ddd;
-    }
-
-    #container>.contents table tbody tr .link {
-      text-align: center;
-      padding: 0 1.4rem;
-    }
-
-    .info_msg {
-      color: #fc6e2e;
-      font-size: 0.7em;
-      padding-left: 1.4rem;
-    }
-
-    .progress {
-      border-left: 1px solid #ddd;
-    }
-
-    .ok {
-      background-color: #a50034;
-      color: #fff !important;
-    }
-
-    .ok:before {
-      content: "완료";
-      font-size: 1.4rem;
-    }
-
-    .ing {
-      background-color: rgba(72, 72, 223, 0.322);
-      color: #fff !important;
-    }
-
-    .ing:before {
-      content: "진행중";
-      font-size: 1.4rem;
-    }
-
-    .new {
-      background-color: #6d0022;
-      color: #fff !important;
-    }
-
-    .new:before {
-      content: "NEW";
-      font-size: 1.4rem;
-    }
-
-    .disabled {
-      background-color: #ccc;
-      color: #fff !important;
-    }
-
-    .disabled:before {
-      content: "삭제";
-      font-size: 1.4rem;
-    }
-
-    #tabs ul:after {
-      content: "";
-      display: block;
-      clear: both;
-    }
-
-    #tabs ul {
-      width: 90%;
-      margin: 0 auto;
-    }
-
-    #tabs ul li {
-      float: left;
-      margin-left: 10px;
-    }
-
-    #tabs ul li:first-child {
-      margin-left: 0;
-    }
-
-    .btn_set {
-      width: 120px;
-      height: 36px;
-      line-height: 36px;
-      border-top-right-radius: 20px;
-      border-top-left-radius: 20px;
-      text-align: center;
-      cursor: pointer;
-      font-size: 1.6rem;
-      font-weight: bold;
-      color: #fff;
-      background-color: #ffb9ab;
-    }
-
-    .btn_set.on {
-      background-color: #a50034;
-    }
-
-    .first_line {
-      border-top: 2px solid #333;
-    }
-
-    .top_btn {
-      opacity: 0;
-      transition: all 0.5s ease;
-      position: fixed;
-      right: 25px;
-      bottom: 10px;
-      height: 50px;
-      color: white;
-      border: none;
-      background: black;
-      cursor: pointer;
-    }
-
-    .top_btn.show {
-      opacity: 1;
-    }
-
-    .tab_content {
-      display: none;
-      margin-top: 60px;
-    }
-
-    .tab_content:first-child {
-      margin-top: 0;
-    }
-
-    .tab_content.on {
-      display: block;
-    }
-
-    td.link a {
-      display: block;
-      max-width: 100%;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    td.link a:hover {
-      text-decoration: underline;
-      font-weight: bold;
-      color: #a50034;
-    }
-
-    .category {
-      background: #fafafa;
-    }
-
-    .depth1,
-    .depth2,
-    .depth3 {
-      padding-left: 10px;
-      text-align: left;
-    }
-
-    td.link,
-    .category,
-    .depth1,
-    .depth2,
-    .depth3 {
-      border-left: 1px solid #ddd;
-    }
-
-    tr.del {
-      text-decoration: line-through;
-    }
-
-    td>sup {
-      color: #ea00ff;
-      font-weight: 400;
-      font-size: 0.9rem;
-      vertical-align: super;
-      opacity: 0.8;
-      letter-spacing: 1px;
-    }
-
-    td>sup:before {
-      content: 'Guide';
-    }
-
-    /* 테블릿 세로 (해상도 768px ~ 1023px)*/
-    @media all and (min-width:768px) and (max-width:1024px) {
+  <head>
+    <meta charset="UTF-8" />
+    <title>Connected Care | LG</title>
+    <link rel="stylesheet" type="text/css" href="assets/default/reset.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <script type="text/javascript" src="assets/lib/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/common.js"></script>
+    <style type="text/css">
       #wrap {
-        min-width: auto;
+        min-width: 1280px;
       }
 
-      #input-form {
-        margin: 30px 15px;
+      #header {
+        color: #000;
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        height: 60px;
+        line-height: 60px;
+      }
+
+      #container {
+        height: 100%;
+      }
+
+      #container > .contents {
+        margin: 2% 0;
+        padding-bottom: 50px;
+      }
+
+      #container > .contents table {
+        width: 90%;
+        border-collapse: collapse;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      #container > .contents table thead {
+        border-top: 2px solid #333;
+        border-bottom: 1px solid #ddd;
+      }
+
+      #container > .contents table thead tr th {
+        background: #f6f6f6;
+        height: 36px;
+        vertical-align: middle;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #333;
+      }
+
+      #container > .contents table tbody tr td {
+        height: 36px;
+        vertical-align: middle;
+        color: #333;
+        font-size: 1.3rem;
+        line-height: normal;
+        border-bottom: 1px solid #ddd;
+      }
+
+      #container > .contents table tbody tr .link {
+        text-align: center;
+        padding: 0 1.4rem;
+      }
+
+      .info_msg {
+        color: #fc6e2e;
+        font-size: 0.7em;
+        padding-left: 1.4rem;
+      }
+
+      .progress {
+        border-left: 1px solid #ddd;
+      }
+
+      .ok {
+        background-color: #a50034;
+        color: #fff !important;
+      }
+
+      .ok:before {
+        content: '완료';
+        font-size: 1.4rem;
+      }
+
+      .ing {
+        background-color: rgba(72, 72, 223, 0.322);
+        color: #fff !important;
+      }
+
+      .ing:before {
+        content: '진행중';
+        font-size: 1.4rem;
+      }
+
+      .new {
+        background-color: #6d0022;
+        color: #fff !important;
+      }
+
+      .new:before {
+        content: 'NEW';
+        font-size: 1.4rem;
+      }
+
+      .disabled {
+        background-color: #ccc;
+        color: #fff !important;
+      }
+
+      .disabled:before {
+        content: '삭제';
+        font-size: 1.4rem;
+      }
+
+      #tabs ul:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+      #tabs ul {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      #tabs ul li {
+        float: left;
+        margin-left: 10px;
+      }
+
+      #tabs ul li:first-child {
+        margin-left: 0;
+      }
+
+      .btn_set {
+        width: 120px;
+        height: 36px;
+        line-height: 36px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #fff;
+        background-color: #ffb9ab;
+      }
+
+      .btn_set.on {
+        background-color: #a50034;
+      }
+
+      .first_line {
+        border-top: 2px solid #333;
+      }
+
+      .top_btn {
+        opacity: 0;
+        transition: all 0.5s ease;
+        position: fixed;
+        right: 25px;
+        bottom: 10px;
+        height: 50px;
+        color: white;
+        border: none;
+        background: black;
+        cursor: pointer;
+      }
+
+      .top_btn.show {
+        opacity: 1;
       }
 
       .tab_content {
-        padding: 0 15px;
-      }
-
-      #container>.contents table {
-        width: 100%;
-        table-layout: fixed;
-      }
-
-      th,
-      td,
-      col {
         display: none;
+        margin-top: 60px;
       }
 
+      .tab_content:first-child {
+        margin-top: 0;
+      }
+
+      .tab_content.on {
+        display: block;
+      }
+
+      td.link a {
+        display: block;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      td.link a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+        color: #a50034;
+      }
+
+      .category {
+        background: #fafafa;
+      }
+
+      .depth1,
+      .depth2,
+      .depth3 {
+        padding-left: 10px;
+        text-align: left;
+      }
+
+      td.link,
       .category,
       .depth1,
-      .link {
-        display: table-cell;
-      }
-    }
-
-    /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
-    @media all and (min-width:480px) and (max-width:767px) {
-      #wrap {
-        min-width: auto;
+      .depth2,
+      .depth3 {
+        border-left: 1px solid #ddd;
       }
 
-      #input-form {
-        margin: 30px 15px;
+      tr.del {
+        text-decoration: line-through;
       }
 
-      .tab_content {
-        padding: 0 15px;
+      td > sup {
+        color: #ea00ff;
+        font-weight: 400;
+        font-size: 0.9rem;
+        vertical-align: super;
+        opacity: 0.8;
+        letter-spacing: 1px;
       }
 
-      #container>.contents table {
-        width: 100%;
-        table-layout: fixed;
+      td > sup:before {
+        content: 'Guide';
       }
 
-      th,
-      td,
-      col {
-        display: none;
+      /* 테블릿 세로 (해상도 768px ~ 1023px)*/
+      @media all and (min-width: 768px) and (max-width: 1024px) {
+        #wrap {
+          min-width: auto;
+        }
+
+        #input-form {
+          margin: 30px 15px;
+        }
+
+        .tab_content {
+          padding: 0 15px;
+        }
+
+        #container > .contents table {
+          width: 100%;
+          table-layout: fixed;
+        }
+
+        th,
+        td,
+        col {
+          display: none;
+        }
+
+        .category,
+        .depth1,
+        .link {
+          display: table-cell;
+        }
       }
 
-      .category,
-      .depth1,
-      .link {
-        display: table-cell;
-      }
-    }
+      /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+      @media all and (min-width: 480px) and (max-width: 767px) {
+        #wrap {
+          min-width: auto;
+        }
 
-    /* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
-    @media all and (max-width:479px) {
-      #wrap {
-        min-width: auto;
+        #input-form {
+          margin: 30px 15px;
+        }
+
+        .tab_content {
+          padding: 0 15px;
+        }
+
+        #container > .contents table {
+          width: 100%;
+          table-layout: fixed;
+        }
+
+        th,
+        td,
+        col {
+          display: none;
+        }
+
+        .category,
+        .depth1,
+        .link {
+          display: table-cell;
+        }
       }
 
-      #input-form {
-        margin: 30px 15px;
-      }
+      /* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
+      @media all and (max-width: 479px) {
+        #wrap {
+          min-width: auto;
+        }
 
-      .tab_content {
-        padding: 0 15px;
-      }
+        #input-form {
+          margin: 30px 15px;
+        }
 
-      #container>.contents table {
-        width: 100%;
-        table-layout: fixed;
-      }
+        .tab_content {
+          padding: 0 15px;
+        }
 
-      th,
-      td,
-      col {
-        display: none;
-      }
+        #container > .contents table {
+          width: 100%;
+          table-layout: fixed;
+        }
 
-      .depth1,
-      .link {
-        display: table-cell;
-      }
-    }
-  </style>
-</head>
+        th,
+        td,
+        col {
+          display: none;
+        }
 
-<body>
-  <div id="wrap">
-    <div id="header">
-      <div class="header_in">
-        <h1><span> LG전자 - Connected Care 2.0 설치환경정보수집_QR기반고장접수_모바일앱 코딩리스트</span></h1>
+        .depth1,
+        .link {
+          display: table-cell;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div id="header">
+        <div class="header_in">
+          <h1><span> LG전자 - Connected Care 2.0 설치환경정보수집_QR기반고장접수_모바일앱 코딩리스트</span></h1>
+        </div>
       </div>
-    </div>
 
-    <div id="container">
-      <div class="contents">
-        <div id="tabs">
-          <ul>
-            <li class="btn_set on" data-tab="tab_1">코딩리스트</li>
-            <!--<li class="btn_set" data-tab="tab_2">Admin</li>-->
-          </ul>
+      <div id="container">
+        <div class="contents">
+          <div id="tabs">
+            <ul>
+              <li class="btn_set on" data-tab="tab_1">코딩리스트</li>
+              <!--<li class="btn_set" data-tab="tab_2">Admin</li>-->
+            </ul>
 
-          <div class="tab_content on" id="tab_1">
-            <table class="coding_list_table">
-              <colgroup>
-                <col class="num" width="5%" />
-                <col class="category" width="15%" />
-                <col class="depth1" width="*" />
-                <col class="depth2" width="*" />
-                <col class="depth3" width="*" />
-                <col class="link" width="25%" />
-                <col class="progress" width="7%" />
-              </colgroup>
-              <thead>
-                <tr>
-                  <th class="num first">NUM</th>
-                  <th class="category">카테고리</th>
-                  <th class="depth1">Depth1</th>
-                  <th class="depth2">Depth2</th>
-                  <th class="depth3">Depth3</th>
-                  <th class="link">링크<br /><span class="info_msg">&#45; 아래 링크를 클릭하시면 해당 페이지로 이동합니다.</span></th>
-                  <th class="progress">진행</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="num"></td>
-                  <td class="category">메인</td>
-                  <td class="depth1"></td>
-                  <td class="depth2"></td>
-                  <td class="depth3"></td>
-                  <td class="link">
-                    <a href="html/main/main.html" target="_blank"></a>
-                  </td>
-                  <td class="ok"></td>
-                </tr>
-                <tr>
-                  <td class="num"></td>
-                  <td class="category" rowspan="4">설치 정보 입력</td>
-                  <td class="depth1"></td>
-                  <td class="depth2"></td>
-                  <td class="depth3"></td>
-                  <td class="link">
-                    <a href="html/install/install_information.html" target="_blank"></a>
-                  </td>
-                  <td class="ok"></td>
-                </tr>
-                <tr>
-                  <td class="num"></td>
-                  <td class="depth1" rowspan="3">팝업</td>
-                  <td class="depth2">저장 성공/실패</td>
-                  <td class="depth3"></td>
-                  <td class="link">
-                    <a href="html/install/pop_save_information.html" target="_blank"></a>
-                  </td>
-                  <td class="ok"></td>
-                </tr>
-                <tr>
-                  <td class="num"></td>
-                  <td class="depth2">저장 불가</td>
-                  <td class="depth3"></td>
-                  <td class="link">
-                    <a href="html/install/pop_alert_information.html" target="_blank"></a>
-                  </td>
-                  <td class="ok"></td>
-                </tr>
-                <tr>
-                  <td class="num"></td>
-                  <td class="depth2">간편 고장 접수</td>
-                  <td class="depth3"></td>
-                  <td class="link">
-                    <a href="html/install/pop2_camera.html" target="_blank"></a>
-                  </td>
-                  <td class="ok"></td>
-                </tr>
-                <tr>
-                  <td class="num"></td>
-                  <td class="category" >Email</td>
-                  <td class="depth1"></td>
-                  <td class="depth2"></td>
-                  <td class="depth3"></td>
-                  <td class="link">
-                    <a href="html/email.html" target="_blank"></a>
-                  </td>
-                  <td class="ok"></td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="tab_content on" id="tab_1">
+              <table class="coding_list_table">
+                <colgroup>
+                  <col class="num" width="5%" />
+                  <col class="category" width="15%" />
+                  <col class="depth1" width="*" />
+                  <col class="depth2" width="*" />
+                  <col class="depth3" width="*" />
+                  <col class="link" width="25%" />
+                  <col class="progress" width="7%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th class="num first">NUM</th>
+                    <th class="category">카테고리</th>
+                    <th class="depth1">Depth1</th>
+                    <th class="depth2">Depth2</th>
+                    <th class="depth3">Depth3</th>
+                    <th class="link">링크<br /><span class="info_msg">&#45; 아래 링크를 클릭하시면 해당 페이지로 이동합니다.</span></th>
+                    <th class="progress">진행</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="num"></td>
+                    <td class="category">메인</td>
+                    <td class="depth1"></td>
+                    <td class="depth2"></td>
+                    <td class="depth3"></td>
+                    <td class="link">
+                      <a href="html/main/main.html" target="_blank"></a>
+                    </td>
+                    <td class="ok"></td>
+                  </tr>
+                  <tr>
+                    <td class="num"></td>
+                    <td class="category" rowspan="5">설치 정보 입력</td>
+                    <td class="depth1"></td>
+                    <td class="depth2"></td>
+                    <td class="depth3"></td>
+                    <td class="link">
+                      <a href="html/install/install_information.html" target="_blank"></a>
+                    </td>
+                    <td class="ok"></td>
+                  </tr>
+                  <tr>
+                    <td class="num"></td>
+                    <td class="depth1" rowspan="4">팝업</td>
+                    <td class="depth2">저장 성공/실패</td>
+                    <td class="depth3"></td>
+                    <td class="link">
+                      <a href="html/install/pop_save_information.html" target="_blank"></a>
+                    </td>
+                    <td class="ok"></td>
+                  </tr>
+                  <tr>
+                    <td class="num"></td>
+                    <td class="depth2">저장 불가</td>
+                    <td class="depth3"></td>
+                    <td class="link">
+                      <a href="html/install/pop_alert_information.html" target="_blank"></a>
+                    </td>
+                    <td class="ok"></td>
+                  </tr>
+                  <tr>
+                    <td class="num"></td>
+                    <td class="depth2">간편 고장 접수</td>
+                    <td class="depth3"></td>
+                    <td class="link">
+                      <a href="html/install/pop2_camera.html" target="_blank"></a>
+                    </td>
+                    <td class="ok"></td>
+                  </tr>
+                  <tr>
+                    <td class="num"></td>
+                    <td class="depth2">지도</td>
+                    <td class="depth3"></td>
+                    <td class="link">
+                      <a href="html/install/pop2_map.html" target="_blank"></a>
+                    </td>
+                    <td class="ok"></td>
+                  </tr>
+                  <tr>
+                    <td class="num"></td>
+                    <td class="category">Email</td>
+                    <td class="depth1"></td>
+                    <td class="depth2"></td>
+                    <td class="depth3"></td>
+                    <td class="link">
+                      <a href="html/email.html" target="_blank"></a>
+                    </td>
+                    <td class="ok"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
+
+      <button type="button" class="top_btn">UP</button>
     </div>
-
-    <button type="button" class="top_btn">UP</button>
-  </div>
-  <script>
-    var $tr = $('tbody > tr');
-    $(function () {
-      var tds = $(".coding_list_table tr td:first-child");
-      for (var i = 0; i < tds.length; i++) {
-        $(tds[i]).html(i + 1);
-        var $link = $tr.eq(i).find('td.link > a');
-        var linkVal = $link.attr('href');
-        linkVal = linkVal.split('/');
-        linkVal = linkVal[linkVal.length - 1];
-        $link.text(linkVal);
-      }
-    });
-    $(function () {
-      var tds = $(".admin_coding_list_table tr td:first-child");
-      for (var i = 0; i < tds.length; i++) {
-        $(tds[i]).html(i + 1);
-        var $link = $tr.eq(i).find('td.link > a');
-        var linkVal = $link.attr('href');
-        linkVal = linkVal.split('/');
-        linkVal = linkVal[linkVal.length - 1];
-        $link.text(linkVal);
-      }
-    });
-
-    function tab() {
-      $("#tabs .btn_set").click("on", function () {
-        var tab_id = $(this).attr("data-tab");
-
-        $("#tabs .btn_set").removeClass("on");
-        $(".tab_content").removeClass("on");
-        $(this).addClass("on");
-        $("#" + tab_id).addClass("on");
+    <script>
+      var $tr = $('tbody > tr');
+      $(function () {
+        var tds = $('.coding_list_table tr td:first-child');
+        for (var i = 0; i < tds.length; i++) {
+          $(tds[i]).html(i + 1);
+          var $link = $tr.eq(i).find('td.link > a');
+          var linkVal = $link.attr('href');
+          linkVal = linkVal.split('/');
+          linkVal = linkVal[linkVal.length - 1];
+          $link.text(linkVal);
+        }
       });
-    }
+      $(function () {
+        var tds = $('.admin_coding_list_table tr td:first-child');
+        for (var i = 0; i < tds.length; i++) {
+          $(tds[i]).html(i + 1);
+          var $link = $tr.eq(i).find('td.link > a');
+          var linkVal = $link.attr('href');
+          linkVal = linkVal.split('/');
+          linkVal = linkVal[linkVal.length - 1];
+          $link.text(linkVal);
+        }
+      });
 
-    tab();
-  </script>
-</body>
+      function tab() {
+        $('#tabs .btn_set').click('on', function () {
+          var tab_id = $(this).attr('data-tab');
 
+          $('#tabs .btn_set').removeClass('on');
+          $('.tab_content').removeClass('on');
+          $(this).addClass('on');
+          $('#' + tab_id).addClass('on');
+        });
+      }
+
+      tab();
+    </script>
+  </body>
 </html>
