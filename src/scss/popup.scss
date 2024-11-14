@@ -1681,12 +1681,15 @@
       .popup-content{
         margin:4rem 0;
         height: auto;
-        .camera-area{
+        .camera-area, .map-area{
           max-width:40rem;
           width:95%;
           min-height: 40rem;
           margin: 0 auto;
           border: 1px solid #000;
+        }
+        .map-info{
+          margin-top:1rem;
         }
       }
     }
