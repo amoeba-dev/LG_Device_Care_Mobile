@@ -1,0 +1,84 @@
+a {
+    cursor: pointer;
+}
+@media screen and (max-width: 640px) {
+    .popup-wrapper .popup .popup-footer .button-box {
+        display: block;
+        margin: -0.5rem 0;
+    }
+    .popup-wrapper .popup .popup-footer .button-box .btn {
+        max-width: 100%;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
+
+/* @media screen and (max-width: 991px) {
+    .popup-picture-detail-setting .popup-content .field-slide-bar .field-form .slide-bar-container {
+        width: 100%;
+    }
+    .popup-picture-detail-setting .popup-content .field-slide-bar .field-form .field-value {
+
+    }
+} */
+
+.popup-wrapper .popup-screen-lock .field input[type="text"],
+.popup-wrapper .popup-screen-lock .field input[type="password"],
+.popup-wrapper .popup-screen-lock .field input[type="email"],
+.popup-wrapper .popup-screen-lock .field input[type="tel"],
+.popup-wrapper .popup-screen-lock .field input[type="number"] {
+    width: 100% !important;
+}
+
+.popup-wrapper .popup-proxy-server-settings .field input[type="text"],
+.popup-wrapper .popup-proxy-server-settings .field input[type="password"],
+.popup-wrapper .popup-proxy-server-settings .field input[type="email"],
+.popup-wrapper .popup-proxy-server-settings .field input[type="tel"],
+.popup-wrapper .popup-proxy-server-settings .field input[type="number"] {
+    width: 100% !important;
+}
+
+.popup-wrapper .popup-edit-device-name .field input[type="text"],
+.popup-wrapper .popup-edit-device-name .field input[type="password"],
+.popup-wrapper .popup-edit-device-name .field input[type="email"],
+.popup-wrapper .popup-edit-device-name .field input[type="tel"],
+.popup-wrapper .popup-edit-device-name .field input[type="number"] {
+    width: 100% !important;
+}
+
+.popup-wrapper .popup-picture-detail-setting .btn.btn-tertiary {
+    min-width: unset;
+    margin-left: 3px;
+}
+
+.popup-wrapper .popup-picture-detail-setting .field .field-header .field-title {
+    font-size: 1.2rem !important;
+    font-weight: 400 !important;
+    color: #555555 !important;
+    line-height: normal !important;
+}
+
+.popup-wrapper .popup-edit-input-priority .btn-up {
+    margin-left: 3px;
+}
+
+.popup-wrapper .popup-add-template .field .field-form .dropdown {
+    width: unset;
+}
+
+.popup-wrapper .popup-add-template .field input[type="text"],
+.popup-wrapper .popup-add-template .field input[type="password"],
+.popup-wrapper .popup-add-template .field input[type="email"],
+.popup-wrapper .popup-add-template .field input[type="tel"],
+.popup-wrapper .popup-add-template .field input[type="number"] {
+    width: 100% !important;
+}
+.popup-wrapper .popup-add-template .field .execution-date .datepicker {
+    width: calc(100% - 4.6rem) !important;
+}
+.popup-wrapper .popup-add-template .title-box {
+    display: block !important;
+}
+.popup-wrapper .popup-add-template .btn.btn-sort-down {
+    margin-left: 2px;
+}

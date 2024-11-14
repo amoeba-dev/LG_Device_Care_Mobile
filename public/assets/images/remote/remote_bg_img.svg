@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="205" height="704">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="제외_1" data-name="제외 1" d="M84 23.5H0V.5h15.5v10h49V.5H84v23z" transform="translate(1498 1024)" style="stroke:#707070;fill:none"/>
+        </clipPath>
+        <style>
+            .cls-9{fill:none}.cls-2{fill:#1a1a1a}.cls-3{fill:transparent;stroke:#585858;stroke-linejoin:round}.cls-4{fill:#fff;font-family:ArialMT,Arial;font-size:8px;opacity:.302}.cls-5{fill:#282828}.cls-11{stroke:none}
+        </style>
+    </defs>
+    <g id="remote_bg_img" transform="translate(-1477 -370)">
+        <rect id="Rectangle_9" data-name="Rectangle 9" class="cls-2" width="205" height="704" rx="25" transform="translate(1477 370)"/>
+        <g id="그룹_37" data-name="그룹 37">
+            <g id="monitor">
+                <g id="Group_53" data-name="Group 53">
+                    <g id="Ellipse_10_copy_2" data-name="Ellipse 10 copy 2" class="cls-3" transform="translate(1497.99 448.99)">
+                        <rect class="cls-11" width="81" height="32" rx="9"/>
+                        <rect class="cls-9" x=".5" y=".5" width="80" height="31" rx="8.5"/>
+                    </g>
+                </g>
+                <path id="사각형_11" data-name="사각형 11" class="cls-2" transform="translate(1531 443)" d="M0 0h40v9H0z"/>
+                <text id="MONITOR-2" data-name="MONITOR" class="cls-4" transform="translate(1551.143 450.566)"><tspan x="-18.814" y="0">MONITOR</tspan></text>
+            </g>
+            <text id="ENERGY_SAVING" data-name="ENERGY SAVING" class="cls-4" transform="translate(1600.143 441.566)"><tspan x="-16.893" y="0">ENERGY</tspan><tspan x="-14.818" y="8">SAVING</tspan></text>
+            <g id="_-" data-name="+-">
+                <rect id="Ellipse_10_copy" data-name="Ellipse 10 copy" class="cls-5" width="53" height="99.99" rx="9" transform="translate(1497.99 640.99)"/>
+                <g id="Rectangle_12" data-name="Rectangle 12">
+                    <g id="Rectangle_12-2" data-name="Rectangle 12" style="fill:transparent;stroke-linecap:round;opacity:.302;stroke-linejoin:round">
+                        <path class="cls-11" d="M1533.992 697.002h-22.887l2.883-1.843 18.465-11.8 1.539-.984v14.627z"/>
+                        <path d="m1532.992 684.2-18.466 11.802h18.466v-11.801m0-2a1.998 1.998 0 0 1 2 2v11.801a2 2 0 0 1-2 2h-18.466a2 2 0 0 1-1.077-3.685l18.466-11.801a2 2 0 0 1 1.077-.315z" style="fill:#fff;stroke:none"/>
+                    </g>
+                </g>
+            </g>
+            <g id="_" data-name="^">
+                <rect id="Ellipse_10_copy-2" data-name="Ellipse 10 copy" class="cls-5" width="53" height="99.99" rx="9" transform="translate(1607.99 640.99)"/>
+                <text id="BRIGHT_NESS" data-name="BRIGHT NESS" transform="translate(1634.002 684.57)" style="font-size:9px;opacity:.302;fill:#fff;font-family:ArialMT,Arial"><tspan x="-17" y="0">BRIGHT</tspan><tspan x="-12.254" y="10">NESS</tspan></text>
+                <text id="_PAGE_" data-name="(PAGE)" class="cls-4" transform="translate(1634.002 703.57)"><tspan x="-13.482" y="0">(PAGE)</tspan></text>
+            </g>
+            <g id="Ellipse_10" data-name="Ellipse 10">
+                <path id="Ellipse_10-2" data-name="Ellipse 10" class="cls-5" d="M1562 915a9 9 0 0 1-9-9v-33h-46a9 9 0 0 1-9-9v-22a9 9 0 0 1 9-9h35.17a12.031 12.031 0 0 0 10.8-11.966V833h.03v-33a9 9 0 0 1 9-9h35a9 9 0 0 1 9 9v22.263A12.033 12.033 0 0 0 1616.736 833H1652a9 9 0 0 1 9 9v22a9 9 0 0 1-9 9h-46v.031h11.966A12.03 12.03 0 0 0 1606 883.83V906a9 9 0 0 1-9 9zm-21.061-41.969h12.029v12.029a12.029 12.029 0 0 0-12.028-12.029z"/>
+                <path id="Stroke_Effect" data-name="Stroke Effect" class="cls-9" d="M1562 915a9 9 0 0 1-9-9v-33h-46a9 9 0 0 1-9-9v-22a9 9 0 0 1 9-9h35.17a12.031 12.031 0 0 0 10.8-11.966V833h.03v-33a9 9 0 0 1 9-9h35a9 9 0 0 1 9 9v22.263A12.033 12.033 0 0 0 1616.736 833H1652a9 9 0 0 1 9 9v22a9 9 0 0 1-9 9h-46v.031h11.966A12.03 12.03 0 0 0 1606 883.83V906a9 9 0 0 1-9 9zm-21.061-41.969h12.029v12.029a12.029 12.029 0 0 0-12.028-12.029z"/>
+            </g>
+            <text id="S.MENU" class="cls-4" transform="translate(1619.11 826.964)"><tspan x="0" y="0">S.MENU</tspan></text>
+            <g id="picture_ID" data-name="picture ID">
+                <g id="마스크_그룹_2" data-name="마스크 그룹 2" style="clip-path:url(#clip-path)">
+                    <g id="Group_52" data-name="Group 52">
+                        <g id="Ellipse_10_copy_3" data-name="Ellipse 10 copy 3" class="cls-3" transform="translate(1506.99 999.99)">
+                            <rect class="cls-11" width="63" height="32" rx="3"/>
+                            <rect class="cls-9" x=".5" y=".5" width="62" height="31" rx="2.5"/>
+                        </g>
+                    </g>
+                </g>
+                <text id="PICTURE_ID-2" data-name="PICTURE ID" class="cls-4" transform="translate(1516.294 1034.861)"><tspan x="0" y="0">PICTURE ID</tspan></text>
+            </g>
+        </g>
+    </g>
+</svg>

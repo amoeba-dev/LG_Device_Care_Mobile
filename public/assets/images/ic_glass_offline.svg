@@ -1,0 +1,28 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="glass_Dashbord">
+<path id="Rectangle 7548" d="M10.8782 32.4987C9.01249 25.1376 13.4674 17.6577 20.8285 15.7919L40.2155 10.8781C47.5767 9.0124 55.0565 13.4673 56.9223 20.8285L61.8361 40.2154C63.7018 47.5766 59.2469 55.0565 51.8858 56.9222L32.4988 61.836C25.1376 63.7017 17.6578 59.2468 15.792 51.8857L10.8782 32.4987Z" fill="url(#paint0_linear_335_80091)"/>
+<g id="Rectangle 7548_2" filter="url(#filter0_b_335_80091)">
+<path d="M25.625 40.625C25.625 33.0311 31.7811 26.875 39.375 26.875H55.625C63.2189 26.875 69.375 33.0311 69.375 40.625V56.875C69.375 64.4689 63.2189 70.625 55.625 70.625H39.375C31.7811 70.625 25.625 64.4689 25.625 56.875V40.625Z" fill="#CACED8" fill-opacity="0.8"/>
+<path d="M25.625 40.625C25.625 33.0311 31.7811 26.875 39.375 26.875H55.625C63.2189 26.875 69.375 33.0311 69.375 40.625V56.875C69.375 64.4689 63.2189 70.625 55.625 70.625H39.375C31.7811 70.625 25.625 64.4689 25.625 56.875V40.625Z" fill="url(#paint1_linear_335_80091)" fill-opacity="0.08"/>
+</g>
+<g id="ic_offline">
+<path id="icon" d="M52.5825 49.855L53.9088 51.1813L56.3388 48.75C58.7788 46.3088 58.7788 42.3513 56.3388 39.9113C53.8988 37.4713 49.9413 37.47 47.5 39.9113L43.7438 43.6675L40.2088 40.1313L38.8825 41.4575L49.93 52.5063L46.1738 56.2625C44.465 57.9713 41.695 57.9713 39.9863 56.2625C38.2775 54.555 38.2775 51.785 39.9863 50.0763L42.42 47.6425L41.0938 46.3163L38.6613 48.75C36.22 51.1913 36.22 55.1475 38.6613 57.5875C41.1025 60.0288 45.06 60.0288 47.5 57.5875L51.2563 53.8313L54.7925 57.3675L56.1188 56.0413L52.5838 52.505L51.2575 51.1788L45.07 44.9913L48.8263 41.235C50.535 39.5263 53.305 39.5263 55.0125 41.235C56.7213 42.9438 56.7213 45.7138 55.0125 47.4225L52.5825 49.855Z" fill="white"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_b_335_80091" x="19.375" y="20.625" width="56.25" height="56.25" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="3.125"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_335_80091"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_335_80091" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_335_80091" x1="60.1495" y1="54.8277" x2="12.5648" y2="17.8864" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5F6E8D"/>
+<stop offset="1" stop-color="#AEB6CB"/>
+</linearGradient>
+<linearGradient id="paint1_linear_335_80091" x1="67.5" y1="68.75" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+<stop stop-opacity="0.6"/>
+<stop offset="1" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

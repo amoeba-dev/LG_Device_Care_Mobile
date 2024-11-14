@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="206" height="705">
+    <path fill="#1A1A1A" fill-rule="evenodd" d="M25 0h155c13.807 0 25 11.193 25 25v654c0 13.807-11.193 25-25 25H25c-13.807 0-25-11.193-25-25V25C0 11.193 11.193 0 25 0z"/>
+    <path fill="#585858" fill-opacity="0" fill-rule="evenodd" stroke="#585858" d="M95.233 79.272c3.885.996 6.757 4.522 6.757 8.718v14c0 4.97-4.029 9-9 9h-63c-4.971 0-9-4.03-9-9v-14c0-4.971 4.029-9 9-9L53 79"/>
+    <text x="55" y="81" fill="#FFF" font-family="Arial" font-size="8" opacity=".302">
+        MONITOR
+    </text>
+    <text x="106" y="80" fill="#FFF" font-family="Arial" font-size="8" opacity=".302">
+        <tspan dy="-8">ENERGY</tspan><tspan x="106" dy="1em">SAVING</tspan>
+    </text>
+    <path fill="#282828" fill-rule="evenodd" stroke="#333" d="M29.99 270.99h35c4.97 0 9 4.029 9 9v81.99c0 4.97-4.03 9-9 9h-35c-4.971 0-9-4.03-9-9v-81.99c0-4.971 4.029-9 9-9z"/>
+    <path fill="#7C7C7C" fill-opacity="0" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M55.992 314.201v11.801H37.526l18.466-11.801z" opacity=".302"/>
+    <path fill="#282828" fill-rule="evenodd" stroke="#333" d="M139.99 270.99h35c4.971 0 9 4.029 9 9v81.99c0 4.97-4.029 9-9 9h-35c-4.971 0-9-4.03-9-9v-81.99c0-4.971 4.029-9 9-9z"/>
+    <text x="140" y="325" fill="#FFF" font-family="Arial" font-size="9" opacity=".302">
+        <tspan dy="-10">BRIGHT</tspan><tspan x="140" dy="1.111em">NESS</tspan>
+    </text>
+    <text x="143" y="334" fill="#FFF" font-family="Arial" font-size="8" opacity=".302">
+        (PAGE)
+    </text>
+    <path fill="#282828" fill-rule="evenodd" stroke="#3C3C3C" d="M175 503h-46v.031h11.966c-6.227 0-11.349 4.732-11.966 10.797V536c0 4.97-4.03 9-9 9H85c-4.971 0-9-4.03-9-9v-33H30c-4.971 0-9-4.03-9-9v-22c0-4.971 4.029-9 9-9h35.174c6.063-.618 10.795-5.74 10.795-11.966V463H76v-33c0-4.971 4.029-9 9-9h35c4.97 0 9 4.029 9 9v22.267c.576 5.659 5.075 10.157 10.734 10.733H175c4.97 0 9 4.029 9 9v22c0 4.97-4.03 9-9 9zm-99.031 12.06c0-6.643-5.386-12.029-12.029-12.029h12.029v12.029z"/>
+    <text x="142" y="457" fill="#FFF" font-family="Arial" font-size="8" opacity=".302">
+        S.MENU
+    </text>
+    <path fill="#282828" fill-opacity="0" fill-rule="evenodd" stroke="#585858" d="M37.2 661.99h-4.21c-1.657 0-3-1.343-3-3v-26m63 0v26c0 1.657-1.343 3-3 3H86.4"/>
+    <text x="39" y="665" fill="#FFF" font-family="Arial" font-size="8" opacity=".302">
+        PICTURE ID
+    </text>
+</svg>

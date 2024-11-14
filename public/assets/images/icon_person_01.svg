@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25">
+    <defs>
+        <filter id="8f5zdldhta">
+            <feFlood flood-color="#757575" flood-opacity="1" result="floodOut"/>
+            <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"/>
+            <feBlend in="compOut" in2="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" stroke="#A9A9AC" stroke-width="2" filter="url(#8f5zdldhta)">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.842 14.817C17.75 15.842 22.9 16.86 22.9 19.59v2.55H1.99v-2.55c0-2.73 4.145-3.862 6.167-4.773"/>
+        <path d="M17.203 8.233c0 3.5-2.583 6.929-4.982 6.948-.07.001.589-.023-.101-.059-.178.037-.248.063-.318.064-1.847.019-4.996-3.343-4.996-6.843 0-3.239 1.744-6.179 5.061-5.963.046-.06.089-.18.533-.19.3 0 .5.01-.28.01.02 0 .04-.01.07-.01.47 0-.082.11-.037.15 3.309.55 5.05 2.652 5.05 5.893z"/>
+    </g>
+</svg>
